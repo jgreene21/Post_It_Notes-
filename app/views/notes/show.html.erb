@@ -1,2 +1,10 @@
-<h1>Notes#show</h1>
-<p>Find me in app/views/notes/show.html.erb</p>
+<br></br>
+<h2> Title: <%= @note.title %></h2> 
+<%= image_tag('postit2.png') %>
+<br></br>
+<h3> Author: <%= @note.author %></h3>
+<h3> Post-it:</h3> 
+<textarea rows="10" cols="50"> <%= @note.body %></textarea>
+<br></br>
+
+<%= link_to 'Back', notes_path %>

@@ -1,0 +1,21 @@
+<h1>Edit Post-it</h1>
+<%= form_for @note do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :author %>
+  <%= f.text_field :author %>
+
+  <%= f.label :body %>
+  <textarea rows="7" cols="30"></textarea>
+
+  <%= f.submit %>
+<% end %>
+
+<h3>Edit Title</h3>
+<%= form_for @note do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.submit %>
+<% end %> 
