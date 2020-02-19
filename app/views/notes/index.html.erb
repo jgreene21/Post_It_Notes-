@@ -1,5 +1,6 @@
 <h1>----- Post-its ----- </h1>
 <p><%= link_to 'New Post-it' , new_note_path %></p> 
+
 <% @notes.each do |note| %>
   <h3><%= note.title %></h3> 
   <%= image_tag('postit2.png') %>
